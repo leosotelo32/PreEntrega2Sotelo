@@ -1,0 +1,274 @@
+/* Reseteo de propiedades*/
+
+* {
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family:"Roboto";
+    src: url("../Fonts/Roboto/Roboto-Regular.ttf")
+}
+
+/* BODY */
+body{
+    display: grid;
+    background-color:rgb(255, 255, 255);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+}
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: whitesmoke;
+    padding: 5% 5% 5% 5%;
+    height: 70%;
+    grid-area: header;
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+}
+
+header nav ul{
+    font-family: "Roboto";
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-direction:row;
+}
+
+header nav ul li{
+    padding: 15 px 10px 15px 10px;
+    justify-content:center;
+    display: flex;
+    font-size: small;
+    font-weight: bold;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+.logo{
+    align-items: left;
+    justify-content: left;
+}
+
+/* MAIN */
+
+main{
+    display:grid;
+    column-gap: 100px;
+    row-gap: 10px;
+    justify-content: center;
+    background-color: rgb(236, 232, 227);
+    grid-area: main;
+    width: 100%
+}
+
+main .caja{
+    background-color: #c4b107;
+}
+
+main .caja h5{
+    background-color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+main section{
+    column-gap: 100px;
+    row-gap: 10px;
+    width: 80%;
+    display: flex;
+    padding: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,50%);
+    background-color: rgb(236, 232, 227);
+    grid-gap: 20px;
+}
+
+/* .seg{
+    align-items: center;
+    justify-content: center;
+    margin: 20px 30px;     */
+}
+
+.card1{
+    background-color:#ccc ;
+    border-radius: 1.3rem;
+    font-family:"Roboto";
+    text-align: center;
+}
+
+.card2{
+    background-color: blueviolet;
+    border-radius: 1.3rem;
+    font-family:"Roboto";
+    text-align: center;
+}
+
+.card3{
+    background-color: beige;
+    border-radius: 1.3rem;
+    font-family:"Roboto";
+    text-align: center;
+}
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.button::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:#c4b107;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out;
+}
+
+.button:hover{
+    background-color: #ccc;
+}
+
+.button:hover::after{
+    top:0;
+}
+
+.button span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+
+}
+
+main section div img{
+    height: 280px;
+    width: 375px;
+    border-radius: 1.3rem;
+}
+
+/* FOOTER */
+
+footer{
+    display: grid;
+    font-family: "Roboto";
+    text-align: center;
+    height: 80px;
+    grid-area: footer;
+    background-color: #c4b107;
+}
+
+.footer.i{
+    display: grid;
+}
+
+/* DISEÑO MOBILE RESPONSIVE MQ PARA "INDEX"*/
+    
+@media (min-width: 320px) and (max-width: 576px) {
+    body{
+        height: 100%;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
+    main{
+        grid-area: main;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+    main section{
+    display: grid;
+    }    
+
+    body .container-fluid{
+        overflow-x: hidden;
+    }
+    }
+
+/* DISEÑO MOBILE RESPONSIVE MQ PARA "NOSOTROS" */
+@media (min-width: 320px) and (max-width: 576px) {
+    .body-a{
+        height: 100%;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    }
+
+    header .header-a{
+        grid-area: header;
+        display: grid;
+    }
+
+    nav .navbar{
+        grid-area: nav;
+        display: grid;
+    }
+
+    main .main-a{
+        grid-area: main;
+        display: grid;
+    }
+
+    footer .footer-a{
+        grid-area: footer;
+        display: grid;
+    }
+
+    main .main-a{
+    display: grid;
+    }    
+
+    body .body-a{
+        overflow-x: hidden;
+    }
+    }    
