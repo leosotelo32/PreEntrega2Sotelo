@@ -1,0 +1,353 @@
+/* MAIN */
+
+main{
+    display:grid;
+    justify-content: center;
+    background-color: white;
+    grid-area: main;
+    width: 100%;
+
+    section{
+        column-gap: 100px;
+        row-gap: 10px; 
+        width: 100%;
+        display: flex;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,50%);
+        background-color:white;
+        grid-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .card img{
+        height: 280px;
+        width: auto;
+        border-radius: 1.3rem;
+    }
+
+    h1{
+        background-color: #FFFDED;
+        text-align: center;
+        font-size: x-large;
+        justify-content: center;
+        align-items: center;
+        font-weight:10;
+        font-family:"BodoniModa_9pt-Medium.ttf";
+        font-size:x;
+    }
+
+    .sectia{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .cajon{
+        display:flex;
+        background-color:white;
+        column-gap: 50px;
+        padding: 10px 35px 10px 35px;
+    }
+    
+    .sectib{
+        background-image: url(../img/fondo-blanco-y-polvo-dorado.jpg);
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        height: 500px;
+        width: 1450px;
+    }
+
+    .sectic{
+        background-image: url(/img/Cuidado-facial.png);
+        display: flex;
+        height:500px ;
+        width:1450px ;
+        margin: 0;   
+    }
+    h2{
+        letter-spacing: 10px;
+        font-family:"Cabin";
+    }
+
+    .h2{
+        font-size:x-large;
+        font-weight:lighter;
+    }
+
+    .titulo-card{
+        font-weight: bolder;
+        font-size: x-large;
+        font-family: "Roboto";
+    }
+
+    .description-card{
+        font-family: "Cabin";
+        font-size: large;
+        font-weight:500;
+    }
+
+    .card{
+        
+        background-color: whitesmoke ;
+        border-radius: 1.3rem;
+        font-family:"Roboto";
+        text-align: center;
+    }
+    
+    .button{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: #fff;
+            font-family: "Roboto";
+            font-size: 20px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: .3s ease all;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background:#c4b107;
+            position: absolute;
+            z-index: 1;
+            top: -80px;
+            left: 0;
+            transition: .3s ease-in-out;
+        }
+
+        .button:hover::after{
+            top:0;
+        }
+
+        .button span{
+            position: relative;
+            z-index: 2;
+            transition: .3s ease all;
+        
+        }
+}
+
+.maint{
+    display: grid;
+}
+
+.maint .contenedort{
+    display: grid;
+    align-items:center;
+    justify-content: center;
+    background-color: gray;
+    height:auto ;
+    width:250px ;
+    border-radius: 1rem;
+}
+
+.maint .contenedort .calendario{
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100px;
+}
+
+.maint .contenedort .calendario h5{
+    text-align: center;
+    font-weight: bold;
+}
+
+.maint .contenedort .calendario li{
+    color: lightgoldenrodyellow;
+}
+
+.maint ul{
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+}
+
+.first-day{
+    grid-column-start: 5;
+}
+
+/* MAIN SERVICIOS */ 
+
+.mains{
+    display: grid;
+}
+
+.mains .banner h1{
+    background-color: black;
+}
+
+.mains .container-fluid{
+    display: flex;
+    background-color: whitesmoke;
+
+.cajons{
+    display: grid;
+    background-color:whitesmoke;
+    opacity: 2;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: repeat(3, 2fr);
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.mains .container-fluid .cajons .card img{
+    width: 360px;
+}
+}
+
+/*MAIN CONTACTO*/
+
+.mainc{
+    display: grid;
+    }
+
+.mainc .sectionco{
+    display: flex;
+    justify-content: last baseline;
+    justify-items: last baseline;
+    align-items: center;
+    align-content: start;
+}
+
+.mainc .sectionco .cajonc{
+    display: flex;
+}
+
+.mainc .sectionco .cajonc .direccion{
+    display: grid;
+}
+
+
+/*MAIN ABOUTUS*/
+
+.maina{
+    display: grid;
+    background-color: white;
+    height: 1800px;
+    width:1400px ;
+    padding: 0px 0px 30px 0px;
+}
+
+.maina .sectiono{
+    display: flex;
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+}
+
+.maina .sectiono .externa{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    justify-items:flex-start;
+    align-content:flex-start;
+}
+
+.maina .sectiono .externa .cajona{
+    display: grid;
+    justify-content: left;
+    padding: 0px 0px 200px 0px;
+}
+
+.maina .sectiono .externa .cajona .nosotros{
+    display: flex;
+    border-radius: 0;
+    height: 700px;
+    width: 500px;
+}
+
+.maina .externa .artia{
+    display: grid;
+    align-items:center;
+    justify-content: center;
+    justify-items:left;
+    align-content:center;
+    padding: 25px;
+}
+
+.maina .sectiono .artia h1{
+    text-align:start;
+    font-size: xxx-large;
+    font-weight: bolder;
+    font-family: "BodoniModa";
+    padding: 0px;
+    margin: 25px 10px 15px 5px;
+}
+
+.maina .externa .artia p{
+    text-align: left;
+    font-family: "Roboto";
+    font-size: larger;
+    justify-content: end;
+    align-content: start;
+}
+
+.maina .segsec{
+    display: grid;
+    height:800px ;
+    width: 100%;
+    background-color: white;
+}
+
+.maina .segsec .cajonab{
+    background-color:white;
+    border-radius: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.maina .segsec .cajonab .subtitulo{
+    background-color: black;
+}
+
+.maina .segsec .cajonab .tips{
+    height: 768px;
+    width: 1366px;
+    border-radius: 0;
+}
+
+.maina .segsec .cajonab .subtitulo{
+    background-color: rgb(40, 40, 40);
+    border-radius: 0.4rem;
+    padding: 3px 2px 3px 2px;
+    color: whitesmoke;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.maina .segsec p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    font-size:x-large;
+    font-weight: bolder;
+    font-family: "Roboto";
+    background-image: url(../img/footer-imagen.png);
+    color: white;
+}
+

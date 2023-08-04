@@ -1,0 +1,12 @@
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family: "Roboto";
+    background-color:#FFFDED;
+    grid-area: header;
+    width: 1500px;
+    height: 170px;
+}

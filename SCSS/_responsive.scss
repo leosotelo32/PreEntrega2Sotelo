@@ -1,0 +1,207 @@
+/* DISEÑO MOBILE RESPONSIVE Media querie*/
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+    /* BODY */
+body{
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    max-width: 576px;
+    display: grid;
+    }
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 10px;
+    width: 100%;
+    overflow-x: hidden;
+    height: 500px;
+    }
+    .un.container-fluid{
+        display: flex;
+        position: absolute;
+    }
+    img .col-lg-3 {
+        display: block;
+    padding: 0;
+    margin: 0;
+    width: 100px ; /* Ajusta el logo al diseño mobile */
+    height: 100px;
+        }
+
+
+    /* NAVBAR */
+nav {
+    display: none; 
+        }
+
+.navbar-toggler {
+    border-radius: 1rem;
+    display: flex; /* Muestra el menú hamburguesa */
+    position: relative;
+    flex-direction: column;
+    align-self:flex-end;
+    justify-content: flex-end;        
+}
+
+button .navbar-toggler{
+    justify-content: end;
+    align-content:end;
+    align-items:end;
+    justify-items:flex-end;
+    flex-direction: column-reverse;
+}
+
+div.un.container-fluid{
+    justify-content: right;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0px 0px 50px 0px;
+    
+}
+
+.collapse.navbar-collapse.show {
+    display: flex; /* Muestra el menú tipo collapsed navigation */
+    
+        }
+
+ul.navbar-nav {       
+    display: flex;    
+    flex-direction: column; /* Ordena los links de navegación en forma vertical*/
+    align-items: rigth;
+    padding: 10px;
+    background-color: black; /* Agrega un fondo de otro color para el nav */
+    border-radius: 5px;
+        }
+
+li.nav-item {
+    margin: 5px 0;
+    display: flex;
+        }    
+    /* MAIN */
+main {
+    padding: 10px;
+    display: grid;
+        }
+    
+div.caja{
+    display:flex;
+    margin: 10px 5px 25px 5px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main .caja h1{
+    font-size: xxx-large;
+    font-weight: bold;
+}
+section{
+    display: grid;
+    overflow-x: hidden;
+}
+
+    /* SECTION */
+section.sectia {
+    display:flex;
+    flex-direction: column;
+    align-items:stretch;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+        }
+
+div.cajon {
+    display: grid;
+    justify-content: stretch;
+    align-content: stretch;
+    align-items: center;
+    margin: 10px 0;
+    column-gap: 5rem;
+    row-gap: 3rem;
+        }
+
+    /* CARDS */
+
+.card {
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    justify-content: stretch;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+        }
+    
+    /* BUTTONS */
+.button {
+    height: 50px;
+    font-size: 16px;
+        }
+
+.sectia .cajon .card p{
+    font-size:xx-large;
+    font-weight:bolder ;
+    font-family: "Roboto";
+}
+    
+/* IMAGEN EN CARDS */
+main .sectia .cajon .card img {
+    height: auto;
+    width: auto;
+    
+main .sectia .cajon button{
+    width: 50px;
+    height: 150px;
+}
+        }
+    /* SECTIONS sectib y sectic */
+    .sectib,.sectic {
+    padding: 10px;
+        }
+    
+    section .sectib{
+        width: 75vw;
+        
+    }
+
+
+    section.sectic{
+            display: none;
+        }
+
+    /* FOOTER */
+    footer {
+        height: fit-content;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        }
+    
+.post-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;          
+    margin-top: 10px;
+        }
+}

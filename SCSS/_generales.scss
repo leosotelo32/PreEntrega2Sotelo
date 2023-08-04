@@ -1,0 +1,36 @@
+/* Reseteo de propiedades*/
+
+* {
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*FUENTES*/
+
+@font-face{
+    font-family:"Roboto";
+    src: url(../Fonts/Roboto/Roboto-Regular.ttf)
+}
+
+@font-face {
+    font-family:"BodoniModa" ;
+    src: url(../Fonts/static/BodoniModa_18pt-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Cabin" ;
+    src: url(../Fonts/Cabin/static/Cabin-Regular.ttf);
+}
+
+/* BODY */
+body{
+    display: grid;
+    font-family: "Roboto";
+    background-color:white;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+}
